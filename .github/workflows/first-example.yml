@@ -14,7 +14,7 @@ jobs:
 
         - name: Executing shell Script
           run: |
-            chmod +x shellscript.sh
+            chmod +x ./shellscript.sh
             ./shellscript.sh
 
          
