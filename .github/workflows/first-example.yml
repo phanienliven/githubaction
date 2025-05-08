@@ -9,11 +9,20 @@ jobs:
         - name: checkout-repo
           uses: actions/checkout@v4
 
-        - name: List and Read file 
-          run: |
-            echo "My first Github Actions Job"
-            ls -ltra
-            Cat README.md
+        - name: Install Cowsay Program
+          uses: Sudo apt-get install cowsay -y
+
+        - name: Execute cowsay CMD
+          uses: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+
+        - name: Test files exists 
+          uses: grep -i "dragon" dragon.txt
+
+        - name: Read File
+          run: Cat dragon.txt
+
+        - name: List Repo Files
+          run: ls -ltra
 
       
 
