@@ -18,8 +18,7 @@ jobs:
         - name: Test files exists 
           run: grep -i "dragon" dragon.txt
 
-        - name: Read File
-          run: Cat dragon.txt
+
 
         - name: List Repo Files
           run: ls -ltra
