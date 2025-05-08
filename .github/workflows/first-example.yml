@@ -14,8 +14,8 @@ jobs:
 
         - name: Executing shell Script
           run: |
-            chmod +x shellscript.sh
-            ./shellscript.sh
+               chmod +x /Users/phanikumarkaryabhattu/Github actions/githubaction/.github/workflows/shellscript.sh
+               ./shellscript.sh
 
          
 
